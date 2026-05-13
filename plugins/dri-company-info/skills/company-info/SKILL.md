@@ -399,6 +399,9 @@ These are real corrections from PJ. Don't repeat them.
 **Mistake:** Treating "Done" status as "everything handled."
 **Correction:** Add the Call Report comment confirming: issue resolved | client notified | root cause documented. If client notification is missing on a client-facing task, you have failed L1 even if status is Done.
 
+**Mistake:** Handling client communication on WhatsApp (or Teams / email / phone) without logging it as a Jira comment.
+**Correction:** Every channel used must be backfilled into the Jira task as a comment, **within the response SLA window**. Format: "Client ack sent via [channel] at [time SAST] by [name]. Content: [brief paraphrase]." Without the Jira log, the L1 PASS/FAIL check and morning brief erroneously flag the task as breached even when the team has actually responded — which makes the standards system look broken and burns trust with PJ. Channel ≠ logging. Both are required. (AN-193 / AN-211 lesson, 2026-05-13.)
+
 ---
 
 ## 15. Quick reference — read this when in doubt
@@ -415,8 +418,9 @@ When in true doubt, default to: **act within authority, document in Jira comment
 
 ---
 
-*Version: 1.1 — 2026-05-13. Source of truth lives at `~/Documents/Claude/Scheduled/dri-team-execution-standards/SKILL.md` on PJ's workstation. Updates flow through this file; team Claude instances reload it daily.*
+*Version: 1.2 — 2026-05-13. Source of truth lives at `~/Documents/Claude/Scheduled/dri-team-execution-standards/SKILL.md` on PJ's workstation. Updates flow through this file; team Claude instances reload it daily.*
 
 *Changelog:*
+- *v1.2 — Section 14 lesson: off-Jira client acks (WhatsApp/Teams/email/phone) must be backfilled as Jira comments within SLA window.*
 - *v1.1 — Added Section 7a (concrete Jira creation workflow with tool-call pseudo-format).*
 - *v1.0 — Initial release.*
