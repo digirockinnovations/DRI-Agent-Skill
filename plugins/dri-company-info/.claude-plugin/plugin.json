@@ -1,0 +1,11 @@
+{
+  "name": "dri-company-info",
+  "version": "0.1.0",
+  "description": "DigiRock Innovations company knowledge and standards",
+  "author": {
+    "name": "DigiRock Innovations"
+  },
+  "skills": [
+    "./skills/company-info"
+  ]
+}
