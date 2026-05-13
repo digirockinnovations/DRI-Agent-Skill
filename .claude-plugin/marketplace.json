@@ -1,12 +1,17 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "DRI Agent Skills",
-  "owner": "digirockinnovations",
+  "description": "DigiRock Innovations internal Claude skills marketplace",
+  "owner": {
+    "name": "DigiRock Innovations"
+  },
   "plugins": [
     {
       "name": "dri-company-info",
       "description": "DigiRock Innovations company knowledge and standards",
-      "author": "DigiRock Innovations",
+      "author": {
+        "name": "DigiRock Innovations"
+      },
       "source": "./plugins/dri-company-info"
     }
   ]
